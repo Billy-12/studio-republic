@@ -1,6 +1,197 @@
 body{
   font-family: nationalTest;
+  color: #111111;
 }
+
 h1,h2,h3,h4,h5,h6{
   font-family: moret, serif;
+}
+
+h2{
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: national2;
+}
+
+.subtext {
+  font-size: 80px;
+  font-family: moret;
+  font-weight: bold;
+  line-height: 1;
+  + .view {
+    margin-top: 20px;
+  }
+}
+
+.container-fluid.extra-padding{
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+img {
+  width: 100%;
+}
+
+/* navbar */
+header .navbar{
+  width: 100%;
+  padding-top: 40px;
+  height: 146px;
+  .navbar-brand {
+    position: fixed;
+  }
+  .navbar-toggler {
+    position: absolute;
+    right: 75px;
+  }
+  .menu-text {
+    display: inline-block;
+    color: #fff;
+    font-size: 35px;
+    font-family: national2;
+    vertical-align: middle;
+  }
+
+  .bars {
+    display: inline-block;
+    vertical-align: middle;
+    .icon-bar {
+      width: 24px;
+      height: 4px;
+      display: block;
+      background-color: #E11973;
+
+      + .icon-bar {
+        margin-top: 5px;
+      }
+
+      &:first-child {
+        width: 50%;
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+/* hero */
+.hero{
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  margin-top: -146px;
+}
+
+/* case study summary */
+.case-study + .case-study{
+  margin-top: 75px;
+}
+.case-study.feature {
+  margin-bottom: 75px;
+}
+.case-study {
+  h2 {
+    margin-bottom: 20px;
+  }
+  h3 {
+      margin-top: 30px;
+  }
+}
+
+/* view link */
+.view {
+  font-size: 28px;
+  color: #111111;
+  text-decoration: none;
+  display: block;
+  &:hover {
+    color: #E11973;
+    i {
+      transform: translateX(20px);
+    }
+  }
+  i {
+    color: #E11973;
+    vertical-align: middle;
+    transition: transform .3s ease;
+    margin-left: 8px;
+  }
+}
+
+/* view all link */
+.view-all-wrapper {
+  margin-top: 75px;
+  .view-all {
+    font-family: 'national2';
+    font-size: 80px;
+    color: #111111;
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 5px;
+    &:after{
+      content: "";
+      height: 8px;
+      width: 80%;
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      background: #E11973;
+    }
+    &:hover{
+      color: #E11973;
+    }
+  }
+}
+
+/* black background styling */
+.black {
+  background: #111111;
+  color: #fff;
+  .intro {
+    color: #E11973;
+    font-size: 36px;
+    max-width: 817px;
+  }
+}
+
+/* statistics */
+.statistics {
+  margin-top: 75px;
+  line-height: .8;
+  .statistic {
+    .number {
+      font-family: moret;
+      font-size: 160px;
+    }
+    .text {
+      font-size: 58px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    + .statistic {
+      margin-top: 60px;
+    }
+  }
+}
+
+/* services */
+.services{
+  font-size: 58px;
+}
+
+@media (max-width: 1199px) {
+  header .navbar .navbar-brand{
+    max-width: 100px;
+  }
 }
